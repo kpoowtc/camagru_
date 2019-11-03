@@ -1,3 +1,6 @@
+<?php
+    require "header.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,12 +20,10 @@
         <img src="images/logo2.png" alt="logo">
       </div>
   </div>
-  <br><br><br><br><br><br><br><br>
   <div class="container">
       <div class="row">
         <div class="col-md-4 offset-md-4 form-div">
                 <form action="includes/login.inc.php" method="post">
-                <h3 class="text-center">Login</h3>
                     <div class="form-group">
                         <input type="text" name="mailuid" placeholder="Username/E-mail..." class="form-control form-contol-lg">
                     </div>
@@ -41,3 +42,10 @@
 
 </body>
 </html>
+    <main>
+        
+        
+    </main>
+<?php
+    require "footer.php";
+?>
