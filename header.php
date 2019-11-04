@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,24 @@
 <body>
 
 <div class="topnav">
+  <div class="login-container">
+  <form action="signup.php" method="post">
+          <button type="submit" name="signup-btn">Sign Up</button>
+  </form>
+  </div>
+  <div class="login-container">
+  <form action="includes/logout.inc.php" method="post">
+          <button type="submit" name="logout-submit">Logout</button>
+  </form>
+  </div>
   <a class="active" href="#">Camagru</a>
+  <div class="login-container">
+    <form action="includes/login.inc.php.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
 </div>
 
 <div>
@@ -16,27 +34,10 @@
       <div class="row">
         <img src="images/logo2.png" alt="logo">
       </div>
+      <br><br><br><br>
+      <main>
+    </main>
   </div>
-  <br><br><br><br><br><br><br><br>
-  <div class="container">
-      <div class="row">
-        <div class="col-md-4 offset-md-4 form-div">
-                <form action="includes/login.inc.php" method="post">
-                <h3 class="text-center">Login</h3>
-                    <div class="form-group">
-                        <input type="text" name="mailuid" placeholder="Username/E-mail..." class="form-control form-contol-lg">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="pwd" placeholder="Password..." class="form-control form-contol-lg">
-                    </div>
-                        <button type="submit" name="login-submit" class="btn btn-primary btn-block btn-lg">Login</button>
-                </form>
-                <br>
-                <p class="text-center" >Not yet a member? <a href="signup.php" target="_blank">Sign Up</a></p>
-        </div>
-      </div>
-</div>
-        
 </div>
 
 </body>
