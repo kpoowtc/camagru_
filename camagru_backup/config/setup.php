@@ -21,7 +21,6 @@ $sql = "CREATE TABLE IF NOT EXISTS `users` (
 `token` VARCHAR(100),
 `password` VARCHAR(255))";
 $conn->exec($sql);
-//echo "Table user_info created successfully<br><br>";
 
 
 // //creating table for $DB_NAME

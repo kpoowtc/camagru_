@@ -5,23 +5,41 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="styles.css">
-
+<style>
+img {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 <title>Sign In</title>
 </head>
 <body>
 
+<div class="img">
+      <div class="row">
+        <img src="images/logo2.png" alt="logo">
+      </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-md-4 offset-md-4 form-div">
-      <form id="registerForm" method="post">
+      <form action="signin.php" method="post">
         <h3 class="text-center">Sign In</h3>
 
-        <div id="errors"></div>
-        
-        
+        <?php if(count($errors) > 0): ?>
+          <div class="alert alert-danger">
+            <?php foreach($errors as $error): ?>
+            <li><?php echo $error; ?></li>
+            <?php endforeach; ?>
+          </div>
+        <?php endif; ?>
+
         <div class="form-group">
           <label for="username">Username or Email</label>
-          <input id="username" type="text" name="username" class="form-control form-control-lg">
+          <input id="username" type="text" name="username" value="<?php echo $username; ?>" class="form-control form-control-lg">
         </div><br>
         <div class="form-group">
           <label for="password">Password</label>

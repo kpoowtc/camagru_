@@ -3,13 +3,23 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
 <link rel="stylesheet" href="styles.css">
-
+<style>
+img {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 <title>Sign Up</title>
 </head>
 <body>
-
+<div class="img">
+      <div class="row">
+        <img src="images/logo2.png" alt="logo">
+      </div>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-md-4 offset-md-4 form-div">
